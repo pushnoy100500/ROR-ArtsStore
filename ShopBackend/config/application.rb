@@ -22,5 +22,14 @@ module ShopBackend
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Allow GET, POST, PUT, DELETE and OPTIONS requests from our Angular App
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'                                 # list of ethods allowed
+        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+      end
+    end
   end
+
 end
