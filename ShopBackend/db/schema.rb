@@ -15,13 +15,16 @@ ActiveRecord::Schema.define(version: 20150728183528) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
-    t.string   "image_url"
+    t.string   "image_url_file_name"
+    t.string   "image_url_content_type"
+    t.integer  "image_url_file_size"
+    t.datetime "image_url_updated_at"
     t.decimal  "price"
     t.integer  "user_id"
     t.string   "overview"
     t.text     "specification"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
