@@ -11,7 +11,11 @@
 	<script src="js/simpleCtrl.js"></script>
 </head>
 <body ng-app="App">
-	<div ng-view></div>
+	<div ng-view>
+<!-- 		<div ng-init="ctrl.getJSON()">
+		</div>	 -->
+		{{ ctrl.getJSON() }}
+	</div>
 
 </body>
 </html>
