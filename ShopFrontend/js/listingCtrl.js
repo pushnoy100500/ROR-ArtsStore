@@ -1,10 +1,9 @@
-function ListingCtrl(ListingService) {
-	this.name = "hey";
-	this.catalogue = []
-	this.listingService = ListingService;
-}
-ListingCtrl.prototype.method_name = function(){
-	/* body... */
-};
 
-app.controller("ListingCtrl", ListingCtrl);
+function ListingCtrl(catalogue) {
+	this.catalogue = catalogue;
+}
+ListingCtrl.prototype.logShit = function(){
+	console.log(this.catalogue);
+};
+app.controller('ListingCtrl', ListingCtrl);
+
