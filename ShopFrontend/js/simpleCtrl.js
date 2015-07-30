@@ -2,15 +2,16 @@ function SimpleCtrl(SimpleService)
 {
 	this.SimpleService = SimpleService;
 	this.name = [];
-
+	this.cart = [];
 	
 	var self = this;
 
 	this.SimpleService.getImages().then(function(data) {
 		self.name = data.data;
-		console.log(data);
 	});
 }
+
+
 
 
 
