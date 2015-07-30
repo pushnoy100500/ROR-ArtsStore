@@ -1,18 +1,6 @@
-<<<<<<< HEAD
-{{	ctrl.getStuff() }}
-=======
-<!-- {{ctrl.name | json}} -->
+<button ng-click="ctrl.logShit()"></button>
+<div ng-repeat="item in ctrl.catalogue">
 
-
-
-<div ng-repeat="object in ctrl.name">
-
-
-<img src="../img/Placeholder.png">
-{{ object.name }}
-{{ object.overview }}
-
+	<img src="http://localhost:3000{{item.image_url}}" alt="">
+	<button></button>
 </div>
-
-
->>>>>>> origin/master
