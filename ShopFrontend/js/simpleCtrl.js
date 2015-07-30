@@ -1,28 +1,20 @@
 function SimpleCtrl($http){
 	this.variable = "hello world!";
-	this.http = $http;
+	this.$http = $http;
 }
+SimpleCtrl.prototype.getStuff = function($http){
+	    console.log('here');
 
-SimpleCtrl.prototype.getJSON = function()
-{
-	self = this;
-	console.log("here")
-	self.http.get('http://localhost:3000/products.json').
-	  success(function(data, status, headers, config) {
-	    // this callback will be called asynchronously
-	    // when the response is available
-	    console.log(data);
-	    console.log("success")
-
-	  }).
-	  error(function(data, status, headers, config) {
-	  	console.log("error");
-	    // called asynchronously if an error occurs
-	    // or server returns response with an error status.
-	  	
-	  });
-
-
-}
+	$http.get('http://45.55.83.78/users').
+  success(function(data, status, headers, config) {
+    // this callback will be called asynchronously
+    // when the response is available
+  }).
+  error(function(data, status, headers, config) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+    console.log('error');
+  });
+};
 
 angular.module('App').controller('SimpleCtrl', SimpleCtrl);
