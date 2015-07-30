@@ -7,6 +7,10 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def welcome_index
+    @products = Product.all
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

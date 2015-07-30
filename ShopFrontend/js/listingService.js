@@ -1,16 +1,16 @@
-function SimpleService($http)
+function ListingService($http)
 {
   this.http = $http;
   this.name = [];
   this.image_url = [];
 }
 
-SimpleService.prototype.getImages = function()
+ListingService.prototype.getImages = function()
 {
 	return this.http.get('http://localhost:3000/products.json');
 }
 
-angular.module('App').service('SimpleService', SimpleService);
+angular.module('App').service('ListingService', ListingService);
 
 
 // "id":1,
