@@ -1,0 +1,24 @@
+<div class="row">
+	<% @products.each do |p| %>
+		<div class="col-md-3 col-sm-3 entry">
+			<h5><%= p.name %></h5>
+			<div>
+				<%= image_tag p.image_url.url(:medium), class: "img_entry" %>
+			</div>
+			<h5>
+				<%= p.overview %>
+			</h5>
+			<p>
+				<%= truncate(p.specification, length: 100) %>
+			</p>
+			<div>
+				<button class="btn btn-default">add to cart</button>
+				<%= link_to "See closer", "products/#{p.id}" %>
+				<div class="price">
+					$ <%= p.price %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>
+	
