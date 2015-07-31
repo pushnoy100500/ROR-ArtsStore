@@ -1,6 +1,7 @@
-<button ng-click="ctrl.logShit()"></button>
-<div ng-repeat="item in ctrl.catalogue">
 
+<div ng-repeat="item in ctrl.catalogue">
+{{$index}}
 	<img src="http://localhost:3000{{item.image_url}}" alt="">
-	<button></button>
+	<button ng-click="ctrl.addToCart(item)">add to cart</button>
 </div>
+<button ng-click="ctrl.sendCart()">send cart to server</button>
