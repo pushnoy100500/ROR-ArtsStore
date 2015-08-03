@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	background-color: gray;
+}
+
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	
+	background-size: cover;
+}
+
+.nav{
+	width: 580px;
+	height: 580px;
+	padding: 0px;
+	margin: 0px auto;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	text-align: center;
+
+	/*border-radius: 300px;
+	border: 1px solid #FD5E0F;
+
+	background-color: rgba(250, 224, 223, 0.7);
+	*//*background-color: white;*/
+}
+
+
+.logo{
+	width:600px;
+	height:370px;
+	
+	margin: 0px auto;
+	margin-top: 30px;
+
+	background: url(/img/hl.png) no-repeat;
+	background-size: cover;
+	/*background-color: yellow;*/
+}
+
+.btn
+{
+	border-radius: 5px;
+	/*border: 1px solid #FD5E0F;*/
+	padding: 10px 20px;
+	margin-left: 20px;
+	color: #FD5E0F;
+	font-family: "Arial Black";
+	background-color: rgba(250, 224, 223, 0.3);
+}
+
+
+.btn:hover
+{
+	color: #FD5E0F;
+	background-color: rgba(250, 224, 223, 0.9);	
+}
+
+.shadowed{
+    -webkit-filter: drop-shadow(1.5px 1.5px 1.5px rgba(255,255,255,0.8));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+}
+
+
+
+
+
+
+
+
