@@ -14,22 +14,16 @@
 
 			<section class="content">
 				<div id="dummy-grid" class="dummy-grid">
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
-					<div class="dummy-grid__item"></div>
+					<div class="dummy-grid__item" ng-repeat="item in ctrl.catalogue">
+					<div calss="model-image" style="height: 295px; background-image: url(http://localhost:3000{{ item.image_url }});">
+						
+					</div>
+						<!-- <img class="model-image" src="http://localhost:3000{{ item.image_url }})"> -->
+						<h3 class="meta__title">{{item.name}}</h3>
+						<span class="meta__brand">{{item.overview}}</span>
+						<span class="meta__price"></br>{{item.price}}</span>
+						
+					</div>
 				</div>
 			</section> 
 

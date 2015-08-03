@@ -112,11 +112,35 @@ a:hover, a:focus,
 	float: left;
 	margin: 0 2% 2em;
 	width: 21%;
-	height: 250px;
+	height: 480px;
+	padding: 10px;
 
-	border-radius: 5px;
-	border: 1px solid #FD5E0F;
+	/*border-radius: 5px;*/
+	/*border: 1px solid #FD5E0F;*/
+	/*background-color: ;*/
+	
 }
+
+
+.dummy-grid__item:hover{
+	border-radius: 5px;
+	background-color: rgba(250, 224, 223, 0.9);
+	border: 1px solid #FD5E0F;	
+}
+
+.model-image  { 
+	height: 295px; 
+	width: 50px; 
+    background-color: yellow; 
+}
+
+
+
+
+
+
+
+
 
 .dummy-grid--highlight .dummy-grid__item:first-child::before, 
 .dummy-grid--highlight .dummy-grid__item:nth-child(4)::before,
