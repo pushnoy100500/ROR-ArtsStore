@@ -3,7 +3,11 @@ var app = angular.module('App',['ngRoute']);
 app.config(function($routeProvider, $httpProvider) {
   $routeProvider
     .when('/home', {
-        templateUrl: 'templates/home.html',
+            templateUrl: 'templates/home.html',
+            controller: 'HomeCtrl as ctrl'
+        })
+    .when('/store', {
+        templateUrl: 'templates/store.html',
         controller: 'ListingCtrl as ctrl',
         resolve: {
         	catalogue: function($http, $q) {

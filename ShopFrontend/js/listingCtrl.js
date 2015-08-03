@@ -1,3 +1,4 @@
+
 function ListingCtrl(catalogue, $http) {
 	this.catalogue = catalogue;
 	this.cart = [];
@@ -33,6 +34,11 @@ ListingCtrl.prototype.sendCart = function(){
     console.log('error');
   });
 };
+ListingCtrl.prototype.toggleCheckout = function(){
+	alert('hi');
+	var ch = document.getElementById("checkout");
+	console.log(ch);
+};
 
 ListingCtrl.prototype.logShit = function(){
 	console.log(sessionStorage.getItem('cart'));
@@ -40,12 +46,3 @@ ListingCtrl.prototype.logShit = function(){
 
 app.controller('ListingCtrl', ListingCtrl);
 
-// function addCssClass() {
-// 	for(var i = 0; i < this.catalogue.length; i++) {
-// 		if(i%5 === 0) {
-// 			this.catalogue[i].class = "grid__item--size-8";
-// 		} else {
-// 			this.catalogue[i].class = "";
-// 		}
-// 	}
-// }
