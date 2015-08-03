@@ -74,7 +74,14 @@ video#bgvid {
 
 }
 
-
+.item_pic {
+	width: 100%;
+	height: auto;
+}
+.item_name {
+	margin: 0px;
+	text-align: center;
+}
 
 
 
