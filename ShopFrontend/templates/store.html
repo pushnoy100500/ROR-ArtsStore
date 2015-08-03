@@ -31,7 +31,7 @@
 					<a class="checkout__button" href="#/store" ng-click="ctrl.toggleCheckout()"><!-- Fallback location -->
 						<span class="checkout__text">
 							<span class="checkout__text-inner checkout__initial-text" >Checkout</span>
-							<span class="checkout__text-inner checkout__final-text">$40.70 <i class="fa fa-fw fa-shopping-cart"></i></span>
+							<span class="checkout__text-inner checkout__final-text">${{ctrl.total}} <i class="fa fa-fw fa-shopping-cart"></i></span>
 						</span>
 					</a>
 					<div class="checkout__order">
@@ -41,7 +41,7 @@
 							        <tr><th>Item</th><th>QTY</th><th>Price</th><th>&nbsp;</th></tr>
 							    </thead>
 							    <tbody>
-									<tr ng-repeat="item in ctrl.displayCart"><td>{{item.name}} <span>{{item.overview}}</span></td><td>1</td><td>{{item.price}}</td><td><button class="checkout__action" ng-click="ctrl.deleteFromCart(item);"><i class="icon fa fa-trash"></i></button></td></tr>
+									<tr ng-repeat="item in ctrl.displayCart track by $index"><td>{{item.name}} <span>{{item.overview}}</span></td><td>1</td><td>{{item.price}}</td><td><button class="checkout__action" ng-click="ctrl.deleteFromCart(item);"><i class="icon fa fa-trash"></i></button></td></tr>
 									
 								</tbody>
 							</table><!-- /checkout__summary -->
