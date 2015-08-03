@@ -22,7 +22,7 @@ ListingCtrl.prototype.sendCart = function(){
 		"cart": this.cart
 	}
 	this.http.post('http://localhost:3000/orders.json', cartToSend).
-  success(function(data, status, headers, config) {
+  	success(function(data, status, headers, config) {
     console.log(data);
     console.log('success');
    sessionStorage.setItem('order_token', JSON.stringify(data));
