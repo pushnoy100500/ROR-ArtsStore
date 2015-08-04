@@ -1,4 +1,17 @@
-var app = angular.module('App',['ngRoute'])
+
+var app = angular.module('App',['ngRoute']);
+app.directive('my-directive', ['$animate', function($animate) {
+  return function(scope, element, attrs) {
+    element.on('click', function() {
+      if(element.hasClass('clicked')) {
+        $animate.removeClass(element, 'clicked');
+      } else {
+        $animate.addClass(element, 'clicked');
+      }
+    });
+  };
+}]);
+
 
 // .directive('stripeForm', ['$window',
 // function($window) {
@@ -20,7 +33,7 @@ var app = angular.module('App',['ngRoute'])
 //   };
 //   return directive;
 
-// }]);;
+
 
 app.config(function($routeProvider, $httpProvider) {
 	Stripe.setPublishableKey('pk_test_ikkXoM6BRQaxNNRrd7mdKyEd');

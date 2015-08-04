@@ -6,6 +6,7 @@ function ListingCtrl(catalogue, $http, $animate) {
 	this.displayCart = [];
 	this.http = $http;
 	this.active = "";
+	this.imageClass = "img-left";
 }
 ListingCtrl.prototype.addToCart = function(item){
 	this.cart.push({id: item.id});
@@ -54,7 +55,13 @@ ListingCtrl.prototype.toggleCheckout = function(){
 		this.active = act;
 	}
 };
-
+ListingCtrl.prototype.toggleImage = function(){
+	if(this.imageClass == "img-left") {
+		this.imageClass = "img-right";
+	} else {
+		this.imageClass = "img-left";
+	}
+}
 ListingCtrl.prototype.logShit = function(){
 	console.log(sessionStorage.getItem('cart'));
 };
