@@ -10,10 +10,10 @@
 		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
-/*
+
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { content: ''; display: table; }
-.clearfix:after { clear: both; */}
+.clearfix:after { clear: both; }
 
 body {
 	background: #fff;
@@ -88,7 +88,7 @@ a:hover, a:focus,
 .checkout--active ~ .dummy-sidebar__overlay {
 	opacity: 1;
 }
-/*
+
 .dummy-grid::after {
 	content: '';
 	position: absolute;
@@ -102,7 +102,7 @@ a:hover, a:focus,
 	transition: opacity 0.3s;
 	pointer-events: none;
 }
-*/
+
 .checkout--active + .dummy-grid::after {
 	opacity: 1;
 }
@@ -111,7 +111,7 @@ a:hover, a:focus,
 	position: relative;
 	
 	/*height: 480px;*/
-	padding: 10px;
+	padding: 0px;
 	overflow: auto;
 
 	/*border-radius: 5px;*/
@@ -121,7 +121,7 @@ a:hover, a:focus,
 }
 .item_wrapper {
 	float: left;
-	margin: 0 2% 2em;
+	margin: 0 2% 1em;
 	width: 20%;
 }
  
@@ -129,14 +129,17 @@ a:hover, a:focus,
 .item_wrapper:hover{
 	border-radius: 5px;
 	background-color: rgba(250, 224, 223, 0.9);
-	border: 1px solid #FD5E0F;	
+/*	border: 1px solid #FD5E0F;	
+*/}
+
+.model-image:hover{ 
+	/*height: 295px; */
+	/*width: 50px; */
+	background-position: left;
+    background-image: url(http://localhost:3000/system/products/image_urls/000/000/009/original/1.jpeg?1438630292) !important;
 }
 
-.model-image  { 
-	/*height: 295px; */
-	width: 50px; 
-    background-color: yellow; 
-}
+
 
 
 
@@ -188,8 +191,60 @@ a:hover, a:focus,
 	background: #FAE0DF;
 	text-align: center;
 }
-/*.add_to_cart {
-	z-index: 99999 !important;
-}*/
+
+
+.add-me{
+	border: none;
+	background: #FAE0DF;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 112px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 0px;
+	color: #606871;
+	position: relative;
+	border-radius: 5px 5px 0px 0px; 
+	/*top: 200px;*/
+}
+
+.meta__title{
+	font-size: 20px;
+	margin: 0px;
+	margin-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.meta__brand{
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.meta__price{
+	font-size: 20px;
+	margin: 0px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
