@@ -24,8 +24,8 @@
                         <button ng-click="ctrl.addToCart(item);" class="add-me" >add to cart</button>
 
                         <div class="dummy-grid__item">
-							<div calss="model-image">  
-	                       		 <img src="http://localhost:3000{{ item.image_url }}" onmouseover="alert('hey');" onmouseout="this.className='img-left';" class="{{ctrl.imageClass}}" alt="">  
+							 <div calss="model-image">  
+	                        <img src="http://localhost:3000{{ item.image_url }}" onmouseover="this.className='img-right';" onmouseout="this.className='img-left';" class="{{ctrl.imageClass}}" alt="">  
 							</div>
 
                             <h3 class="meta__title">{{item.name}}</h3>
