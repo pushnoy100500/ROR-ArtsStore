@@ -132,11 +132,20 @@ a:hover, a:focus,
 /*	border: 1px solid #FD5E0F;	
 */}
 
+<<<<<<< HEAD
+.model-image { 
+	/*height: 295px; */
+
+	width: 50px; 
+    background-color: yellow; 
+    overflow: hidden;
+=======
 .model-image:hover{ 
 	/*height: 295px; */
 	/*width: 50px; */
 	background-position: left;
     background-image: url(http://localhost:3000/system/products/image_urls/000/000/009/original/1.jpeg?1438630292) !important;
+>>>>>>> origin/master
 }
 
 
@@ -145,10 +154,13 @@ a:hover, a:focus,
 
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> origin/master
 .dummy-grid--highlight .dummy-grid__item:first-child::before, 
 .dummy-grid--highlight .dummy-grid__item:nth-child(4)::before,
 .dummy-grid--highlight .dummy-grid__item:nth-child(7)::before {
