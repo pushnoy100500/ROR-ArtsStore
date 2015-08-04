@@ -1,5 +1,5 @@
 
-function ListingCtrl(catalogue, $http) {
+function ListingCtrl(catalogue, $http, $animate) {
 	this.catalogue = catalogue;
 	this.cart = [];
 	this.total = 0;
