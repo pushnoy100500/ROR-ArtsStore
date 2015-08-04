@@ -1,11 +1,9 @@
-<form action="/charge" method="POST">
-  <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_ikkXoM6BRQaxNNRrd7mdKyEd"
-    data-image="/img/documentation/checkout/marketplace.png"
-    data-name="Demo Site"
-    data-description="2 widgets"
-    data-currency="cad"
-    data-amount="2000">
-  </script>
+<form>
+  <fieldset>
+    Number: <input type="text" size="20" data-stripe="number"/>
+    cvc: <input type="text" size="4" data-stripe="cvc"/>
+    exp month: <input type="text" size="2" data-stripe="exp-month"/>
+    exp year: <input type="text" size="4" data-stripe="exp-year"/>
+  </fieldset>
+  <button type="submit">Save</button>
 </form>

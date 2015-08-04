@@ -11,6 +11,7 @@ ListingCtrl.prototype.addToCart = function(item){
 	this.cart.push({id: item.id});
 	this.displayCart.push(item);
 	this.total += parseFloat(item.price);
+		this.total = Math.round(this.total * 100) / 100
 	console.log(this.cart);
 	sessionStorage.setItem('cart', JSON.stringify(this.cart));
 };
@@ -19,6 +20,7 @@ ListingCtrl.prototype.deleteFromCart = function(item){
 		console.log(this.cart[i]);
 		if(this.cart[i].id === item.id) {
 			this.total -= parseFloat(this.displayCart[i].price);
+			this.total = Math.round(this.total * 100) / 100
 			this.cart.splice(i, 1);
 			this.displayCart.splice(i, 1);
 			break;
