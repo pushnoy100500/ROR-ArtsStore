@@ -1,5 +1,5 @@
 
-function CheckoutCtrl($http) {
+function CheckoutCtrl($http, stripe) {
 	this.cardNum = 'test';
 }
 CheckoutCtrl.prototype.saveCustomer = function(data){

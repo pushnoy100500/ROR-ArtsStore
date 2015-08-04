@@ -1,24 +1,26 @@
-var app = angular.module('App',['ngRoute', 'angular-stripe']).directive('stripeForm', ['$window',
-function($window) {
+var app = angular.module('App',['ngRoute'])
 
-  var directive = { restrict: 'A' };
-  directive.link = function(scope, element, attributes) {
-    var form = angular.element(element);
-    form.bind('submit', function() {
-      var button = form.find('button');
-      button.prop('disabled', true);
-      $window.Stripe.createToken(form[0], function() {
-        button.prop('disabled', false);
-        var args = arguments;
-        scope.$apply(function() {
-          scope.$eval(attributes.stripeForm).apply(scope, args);
-        });
-      });
-    });
-  };
-  return directive;
+// .directive('stripeForm', ['$window',
+// function($window) {
 
-}]);;
+//   var directive = { restrict: 'A' };
+//   directive.link = function(scope, element, attributes) {
+//     var form = angular.element(element);
+//     form.bind('submit', function() {
+//       var button = form.find('button');
+//       button.prop('disabled', true);
+//       $window.Stripe.createToken(form[0], function() {
+//         button.prop('disabled', false);
+//         var args = arguments;
+//         scope.$apply(function() {
+//           scope.$eval(attributes.stripeForm).apply(scope, args);
+//         });
+//       });
+//     });
+//   };
+//   return directive;
+
+// }]);;
 
 app.config(function($routeProvider, $httpProvider) {
 	Stripe.setPublishableKey('pk_test_ikkXoM6BRQaxNNRrd7mdKyEd');
