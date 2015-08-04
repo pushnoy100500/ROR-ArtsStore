@@ -336,8 +336,16 @@ a.checkout__button:focus {
 	}
 }
 
+
+.checkout__link{
+	font-size: 15px;
+	font-weight: bold;
+}
+
 .checkout__link:hover{
 	color: #fff !important;
+	font-size: 15px;
+	font-weight: bold;
 }
 
 

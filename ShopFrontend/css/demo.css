@@ -122,7 +122,7 @@ a:hover, a:focus,
 .item_wrapper {
 	float: left;
 	margin: 0 2% 1em;
-	width: 20%;
+	width: 21%;
 }
  
 
@@ -196,9 +196,9 @@ a:hover, a:focus,
 .add-me{
 	border: none;
 	background: #FAE0DF;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: lighter;
-	padding-right: 92px;
+	padding-right: 127.5px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-top: 0px;
@@ -213,8 +213,8 @@ a:hover, a:focus,
 .add-me:hover{
 	border: none;
 	background: #606871;
-	font-size: 20px;
-	padding-right: 92px;
+	font-size: 15px;
+	padding-right: 127.5px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-top: 0px;
@@ -251,7 +251,8 @@ a:hover, a:focus,
 
 .header__giff{
 	/*border-bottom: orange;*/
-	border-bottom: 5px solid #FD5E0F;
+	/*border-bottom: 5px solid #FD5E0F;*/
+	/*background-color: #FAE0DF;*/
 
 }
 
