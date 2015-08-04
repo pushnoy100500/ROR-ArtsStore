@@ -13,18 +13,22 @@
 
 			<section class="content">
 				<div id="dummy-grid" class="dummy-grid">
-					<div class="dummy-grid__item" ng-repeat="item in ctrl.catalogue">
 
-					<div calss="model-image" style="height: 295px; background-image: url(http://localhost:3000{{ item.image_url }});">
-						
-					</div>
-						<!-- <img class="model-image" src="http://localhost:3000{{ item.image_url }})"> -->
-						<h3 class="meta__title">{{item.name}}</h3>
-						<span class="meta__brand">{{item.overview}}</span>
-						<span class="meta__price"></br>{{item.price}}</span>
-						<button><input ng-click="ctrl.addToCart(item);" value="add"></button>
-						
-					</div>
+
+					<div ng-repeat="item in ctrl.catalogue" class="item_wrapper">
+
+                        <div class="dummy-grid__item">
+                        <div calss="model-image" style="height: 295px; background-image: url(http://localhost:3000{{ item.image_url }});">
+                            
+                        </div>
+                            <h3 class="meta__title">{{item.name}}</h3>
+                            <span class="meta__brand">{{item.overview}}</span>
+                            <span class="meta__price"></br>{{item.price}}</span>
+                            <p class="add_to_cart"></p>
+                        </div>
+
+                        <button ng-click="ctrl.addToCart(item);">add</button>
+                    </div>
 
 				</div>
 			</section> 
@@ -37,7 +41,7 @@
 					<a class="checkout__button" href="#/store" ng-click="ctrl.toggleCheckout()"><!-- Fallback location -->
 						<span class="checkout__text">
 							<span class="checkout__text-inner checkout__initial-text" >Checkout</span>
-							<span class="checkout__text-inner checkout__final-text">$40.70 <i class="fa fa-fw fa-shopping-cart"></i></span>
+							<span class="checkout__text-inner checkout__final-text">${{ctrl.total}} <i class="fa fa-fw fa-shopping-cart"></i></span>
 						</span>
 					</a>
 					<div class="checkout__order">
@@ -47,7 +51,7 @@
 							        <tr><th>Item</th><th>QTY</th><th>Price</th><th>&nbsp;</th></tr>
 							    </thead>
 							    <tbody>
-									<tr ng-repeat="item in ctrl.displayCart"><td>{{item.name}} <span>{{item.overview}}</span></td><td>1</td><td>{{item.price}}</td><td><button class="checkout__action" ng-click="ctrl.deleteFromCart(item);"><i class="icon fa fa-trash"></i></button></td></tr>
+									<tr ng-repeat="item in ctrl.displayCart track by $index"><td>{{item.name}} <span>{{item.overview}}</span></td><td>1</td><td>{{item.price}}</td><td><button class="checkout__action" ng-click="ctrl.deleteFromCart(item);"><i class="icon fa fa-trash"></i></button></td></tr>
 									
 								</tbody>
 							</table><!-- /checkout__summary -->
