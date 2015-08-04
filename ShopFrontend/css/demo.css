@@ -198,11 +198,29 @@ a:hover, a:focus,
 	background: #FAE0DF;
 	font-size: 20px;
 	font-weight: bold;
-	padding-right: 112px;
+	padding-right: 88px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-top: 0px;
+	margin-right: 0px;
 	color: #606871;
+	position: relative;
+	border-radius: 5px 5px 0px 0px; 
+	/*top: 200px;*/
+}
+
+
+.add-me:hover{
+	border: none;
+	background: #606871;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 88px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 0px;
+	margin-right: 0px;
+	color: #FAE0DF;
 	position: relative;
 	border-radius: 5px 5px 0px 0px; 
 	/*top: 200px;*/
