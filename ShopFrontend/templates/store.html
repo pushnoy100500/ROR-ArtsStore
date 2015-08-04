@@ -10,11 +10,22 @@
 	</div>
 	<div class="color-3">
 		<div class="container">
+			
+			<div style="height:100px" ></div>
 
 			<section class="content">
+<<<<<<< HEAD
 				<div class="dummy-grid">
-					<div ng-repeat="item in ctrl.catalogue" class="item_wrapper">
+=======
+				<div id="dummy-grid" class="dummy-grid">
 
+
+>>>>>>> origin/master
+					<div ng-repeat="item in ctrl.catalogue" class="item_wrapper">
+						
+                        <button ng-click="ctrl.addToCart(item);" class="add-me" >buy now</button>
+
+<<<<<<< HEAD
 						<div class="dummy-grid__item">
 						<div calss="model-image">
 							<img src="http://localhost:3000{{ item.image_url }}" alt="">
@@ -24,11 +35,23 @@
 							<span class="meta__price"></br>{{item.price}}</span>
 							<p class="add_to_cart"></p>
 						</div>
+=======
+                        <div class="dummy-grid__item">
+							
+	                        <div calss="model-image" style="height: 295px; background-image: url(http://localhost:3000{{ item.image_url }}); background-position: left;">    
+							</div>
+>>>>>>> origin/master
 
-						<button ng-click="ctrl.addToCart(item);">add</button>
-					</div>
+                            <h3 class="meta__title">{{item.name}}</h3>
+                            <p class="meta__brand">{{item.overview}}</p>
+                            <p class="meta__price">${{item.price}}</p>
+                            <p class="add_to_cart"></p>
+                        </div>
+                    </div>
 				</div>
 			</section> 
+
+			<div style="height:100px" ></div>
 
 			<div class="dummy-fixed">
 				<svg class="checkout__icon" width="30px" height="30px" viewBox="0 0 35 35">
