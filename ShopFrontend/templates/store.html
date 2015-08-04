@@ -14,34 +14,20 @@
 			<div style="height:100px" ></div>
 
 			<section class="content">
-<<<<<<< HEAD
+
 				<div class="dummy-grid">
-=======
-				<div id="dummy-grid" class="dummy-grid">
+
+			
 
 
->>>>>>> origin/master
 					<div ng-repeat="item in ctrl.catalogue" class="item_wrapper">
 						
                         <button ng-click="ctrl.addToCart(item);" class="add-me" >buy now</button>
 
-<<<<<<< HEAD
-						<div class="dummy-grid__item">
-						<div calss="model-image">
-							<img src="http://localhost:3000{{ item.image_url }}" alt="">
-						</div>
-							<h3 class="meta__title">{{item.name}}</h3>
-							<span class="meta__brand">{{item.overview}}</span>
-							<span class="meta__price"></br>{{item.price}}</span>
-							<p class="add_to_cart"></p>
-						</div>
-=======
                         <div class="dummy-grid__item">
 							
 	                        <div calss="model-image" style="height: 295px; background-image: url(http://localhost:3000{{ item.image_url }}); background-position: left;">    
 							</div>
->>>>>>> origin/master
-
                             <h3 class="meta__title">{{item.name}}</h3>
                             <p class="meta__brand">{{item.overview}}</p>
                             <p class="meta__price">${{item.price}}</p>
