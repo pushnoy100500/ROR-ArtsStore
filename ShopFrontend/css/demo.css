@@ -132,13 +132,13 @@ a:hover, a:focus,
 	border: 1px solid #FD5E0F;	
 }
 
-.model-image  { 
+.model-image { 
 	/*height: 295px; */
+
 	width: 50px; 
     background-color: yellow; 
+    overflow: hidden;
 }
-
-
 
 
 

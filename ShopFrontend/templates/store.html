@@ -16,8 +16,8 @@
 					<div ng-repeat="item in ctrl.catalogue" class="item_wrapper">
 
 						<div class="dummy-grid__item">
-						<div calss="model-image" style="height: 295px; background-image: url(http://localhost:3000{{ item.image_url }});">
-							
+						<div calss="model-image">
+							<img src="http://localhost:3000{{ item.image_url }}" alt="">
 						</div>
 							<h3 class="meta__title">{{item.name}}</h3>
 							<span class="meta__brand">{{item.overview}}</span>
@@ -40,6 +40,7 @@
 							<span class="checkout__text-inner checkout__initial-text" >Checkout</span>
 							<span class="checkout__text-inner checkout__final-text">${{ctrl.total}} <i class="fa fa-fw fa-shopping-cart"></i></span>
 						</span>
+						
 					</a>
 					<div class="checkout__order">
 						<div class="checkout__order-inner">
@@ -49,8 +50,8 @@
 							    </thead>
 							    <tbody>
 									<tr ng-repeat="item in ctrl.displayCart track by $index"><td>{{item.name}} <span>{{item.overview}}</span></td><td>1</td><td>{{item.price}}</td><td><button class="checkout__action" ng-click="ctrl.deleteFromCart(item);"><i class="icon fa fa-trash"></i></button></td></tr>
-									
 								</tbody>
+
 							</table><!-- /checkout__summary -->
 							
 							<button class="checkout__close checkout__cancel" ng-click="ctrl.toggleCheckout()"><i class="icon fa fa-fw fa-close"></i>Close</button>
