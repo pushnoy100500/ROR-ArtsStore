@@ -83,6 +83,14 @@ video#bgvid {
 	text-align: center;
 }
 
+.img-left {
+position: relative;
+left: 0px;
+}
+.img-right {
+	position: relative;
+left: -250px;
+}
 
 
 
