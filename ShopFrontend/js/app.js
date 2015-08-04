@@ -27,10 +27,6 @@ app.config(function($routeProvider, $httpProvider) {
         }
     }
       })
-    .when('/checkout', {
-    	templateUrl: 'templates/checkout.html',
-    	controller: 'CheckoutCtrl as ctrl'
-    })
       .otherwise({
         redirectTo: '/home'
       });
