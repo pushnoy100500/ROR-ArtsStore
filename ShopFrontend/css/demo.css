@@ -196,9 +196,9 @@ a:hover, a:focus,
 .add-me{
 	border: none;
 	background: #FAE0DF;
-	font-size: 20px;
-	font-weight: bold;
-	padding-right: 88px;
+	font-size: 15px;
+	font-weight: lighter;
+	padding-right: 127.5px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-top: 0px;
@@ -213,9 +213,8 @@ a:hover, a:focus,
 .add-me:hover{
 	border: none;
 	background: #606871;
-	font-size: 20px;
-	font-weight: bold;
-	padding-right: 88px;
+	font-size: 15px;
+	padding-right: 127.5px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-top: 0px;
@@ -249,8 +248,6 @@ a:hover, a:focus,
 	text-align: left;
 	padding-left: 10px;
 }
-
-
 
 
 
