@@ -188,8 +188,84 @@ a:hover, a:focus,
 	background: #FAE0DF;
 	text-align: center;
 }
+<<<<<<< HEAD
 /*.add_to_cart {
 	z-index: 99999 !important;
 }*/
+=======
+
+
+.add-me{
+	border: none;
+	background: #FAE0DF;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 88.5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 0px;
+	margin-right: 0px;
+	color: #606871;
+	position: relative;
+	border-radius: 5px 5px 0px 0px; 
+	/*top: 200px;*/
+}
+
+
+.add-me:hover{
+	border: none;
+	background: #606871;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 88.5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 0px;
+	margin-right: 0px;
+	color: #FAE0DF;
+	position: relative;
+	border-radius: 5px 5px 0px 0px; 
+	/*top: 200px;*/
+}
+
+.meta__title{
+	font-size: 20px;
+	margin: 0px;
+	margin-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.meta__brand{
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.meta__price{
+	font-size: 20px;
+	margin: 0px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/master
 
 
