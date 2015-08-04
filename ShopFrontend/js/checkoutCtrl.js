@@ -1,6 +1,11 @@
 
-function checkoutCtrl($http) {
-
+function ListingCtrl(catalogue, $http) {
+	this.catalogue = catalogue;
+	this.cart = [];
+	this.total = 0;
+	this.displayCart = [];
+	this.http = $http;
+	this.active = "";
 }
 
-app.controller('CheckoutCtrl', checkoutCtrl);
+app.controller('ListingCtrl', ListingCtrl);

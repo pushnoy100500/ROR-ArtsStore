@@ -42,6 +42,7 @@
 	/* center on screen (padding of parent, half of summary height, half of viewport height) */
 	-webkit-transform: translate3d(0, 15px, 0) translate3d(0, 30vh, 0) translate3d(0, -50vh, 0);
 	transform: translate3d(0, 15px, 0) translate3d(0, 30vh, 0) translate3d(0, -50vh, 0);
+	
 }
 
 a.checkout__button {
